@@ -1,0 +1,10 @@
+Package: hatenab
+Type: Package
+Title: Get info from Hatena
+Version: 0.1
+Date: 2015-01-23
+Author: dichika
+Maintainer: dichika <yourfault@somewhere.net>
+Description: Get the information from Hatena Bookmark API
+License: MIT
+Imports: httr
