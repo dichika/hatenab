@@ -7,7 +7,7 @@ getBookmarkCount <- function(url){
                 paste(collapse="&", paste0("url=",url))
     )
     res <- GET(u)
-    res <- content(res)
+    res <- httr::content(res)
   } else{
     loops <- trunc(counts/50)+1
     res <- NULL
@@ -18,7 +18,7 @@ getBookmarkCount <- function(url){
                   paste(collapse="&", paste0("url=",url0))
       )
       res0 <- GET(u)
-      res <- c(res, content(res0))
+      res <- c(res, httr::content(res0))
       Sys.sleep(0.5)
     }
    }
